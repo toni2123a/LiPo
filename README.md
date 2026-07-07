@@ -12,14 +12,14 @@ Danach ist die Anwendung unter <http://localhost:8088> erreichbar.
 
 ## GitHub Pages
 
-Die Anwendung ist eine reine statische Webseite. Fuer GitHub Pages werden nur diese Dateien im Root des `main`-Branches benoetigt:
+Die Anwendung ist eine reine statische Webseite. Fuer GitHub Pages werden diese Dateien deployed:
 
 - `index.html`
 - `style.css`
 - `app.js`
 - `.nojekyll`
 
-Pages-Quelle: `Deploy from a branch`, Branch `main`, Ordner `/`.
+Deployment: GitHub Actions Workflow `.github/workflows/pages.yml`.
 Danach ist die App unter <https://toni2123a.github.io/LiPo/> erreichbar.
 
 ## Lokaler Start ohne Docker
