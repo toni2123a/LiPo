@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiPo Facility Control</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-mark">LM</span>
+          <div>
+            <strong>LiPo Facility Control</strong>
+            <small>Stadt Netphen</small>
+          </div>
+        </div>
+        <nav id="mainNav" class="main-nav" aria-label="Hauptnavigation"></nav>
+      </aside>
+
+      <main class="main">
+        <header class="topbar">
+          <button id="menuToggle" class="icon-button" type="button" aria-label="Navigation umschalten">☰</button>
+          <div>
+            <p class="eyebrow">LiPo Facility Control</p>
+            <h1 id="pageTitle">Dashboard</h1>
+          </div>
+          <div class="topbar-actions">
+            <button id="resetData" class="ghost-button" type="button">Beispieldaten neu laden</button>
+            <span class="live-badge">Lokal / Docker</span>
+          </div>
+        </header>
+
+        <section id="appView" class="content" aria-live="polite"></section>
+      </main>
+    </div>
+
+    <dialog id="editDialog">
+      <form method="dialog" class="dialog-card">
+        <header>
+          <h2 id="dialogTitle">Datensatz</h2>
+          <button class="icon-button" value="cancel" aria-label="Schließen">×</button>
+        </header>
+        <div id="dialogBody" class="dialog-body"></div>
+        <footer>
+          <button class="ghost-button" value="cancel" type="submit">Abbrechen</button>
+          <button id="dialogSave" class="primary-button" value="default" type="button">Speichern</button>
+        </footer>
+      </form>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
